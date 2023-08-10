@@ -1,0 +1,36 @@
+/* styles.css */
+.offline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.offline-animation {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3498db;
+  animation: pulse 2s infinite;
+}
+
+.offline-text {
+  font-size: 24px;
+  color: #333;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      background-color: #3498db;
+  }
+  50% {
+      transform: scale(1.2);
+      background-color: #e74c3c;
+  }
+  100% {
+      transform: scale(1);
+      background-color: #3498db;
+  }
+}
